@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F9F7F5;
+  --color-surface: #FFFFFF;
+  --color-text: #2C2C2C;
+  --color-muted: #6B6B6B;
+  --color-accent: #D4A373;
+  --color-accent-hover: #B08D55;
+  --color-accent-pressed: #8C6E42;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Lato', system-ui, -apple-system, sans-serif;
+
+  --radius-card: 12px;
+  --radius-badge: 9999px;
+  --radius-btn: 8px;
+
+  --shadow-card: 0 4px 16px -2px rgba(44, 44, 44, 0.06);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-text);
+    font-weight: 700;
+  }
+
+  /* Accessible focus rings */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}

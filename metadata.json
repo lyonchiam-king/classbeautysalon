@@ -1,0 +1,6 @@
+{
+  "name": "Class Beauty Salon",
+  "description": "Precise cuts and threading in the heart of Withington, Manchester. Friendly staff, fair prices, and a relaxing atmosphere on Burton Rd.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
